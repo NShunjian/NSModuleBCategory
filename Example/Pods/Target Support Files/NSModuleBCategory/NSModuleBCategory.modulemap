@@ -1,0 +1,6 @@
+framework module NSModuleBCategory {
+  umbrella header "NSModuleBCategory-umbrella.h"
+
+  export *
+  module * { export * }
+}
