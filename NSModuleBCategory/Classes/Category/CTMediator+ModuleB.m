@@ -10,10 +10,10 @@
 
 @implementation CTMediator (ModuleB)
 
-- (UIViewController *)ModuleB_viewControllerWithCallback:(void(^)(NSString *result))callback {
+- (UIViewController *)performTarget:(NSString *)targetName action:(NSString *)actionName shouldCacheTarget:(BOOL)shouldCacheTarget ModuleB_viewControllerWithCallback:(void(^)(NSString *result))callback {
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     params[@"callback"] = callback;
-    return [self performTarget:@"ModuleB" action:@"viewController" params:params shouldCacheTarget:NO];
+    return [self performTarget:targetName action:actionName params:params shouldCacheTarget:shouldCacheTarget];
 }
 @end
     

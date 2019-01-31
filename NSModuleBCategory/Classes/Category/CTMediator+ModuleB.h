@@ -10,6 +10,6 @@
 
 @interface CTMediator (ModuleB)
 
-- (UIViewController *)ModuleB_viewControllerWithCallback:(void(^)(NSString *result))callback;
+- (UIViewController *)performTarget:(NSString *)targetName action:(NSString *)actionName shouldCacheTarget:(BOOL)shouldCacheTarget ModuleB_viewControllerWithCallback:(void(^)(NSString *result))callback;
 
 @end
