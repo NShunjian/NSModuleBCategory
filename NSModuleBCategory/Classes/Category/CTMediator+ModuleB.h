@@ -2,7 +2,7 @@
 //  CTMediator+ModuleB.h
 //  ModuleB-Category
 //
-//  Created by 刘光强 on 2018/10/1.
+//  Created by NShunjian on 2018/10/1.
 //  Copyright © 2018年 quangqiang. All rights reserved.
 //
 
@@ -10,6 +10,6 @@
 
 @interface CTMediator (ModuleB)
 
-- (UIViewController *)performTarget:(NSString *)targetName action:(NSString *)actionName shouldCacheTarget:(BOOL)shouldCacheTarget ModuleB_viewControllerWithCallback:(void(^)(NSString *result))callback;
+- (UIViewController *)performTarget:(NSString *)targetName action:(NSString *)actionName shouldCacheTarget:(BOOL)shouldCacheTarget ModuleB_viewControllerWithParams:(NSDictionary *)params;
 
 @end
