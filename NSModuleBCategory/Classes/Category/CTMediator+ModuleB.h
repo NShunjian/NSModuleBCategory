@@ -11,5 +11,6 @@
 @interface CTMediator (ModuleB)
 
 - (UIViewController *)performTarget:(NSString *)targetName action:(NSString *)actionName shouldCacheTarget:(BOOL)shouldCacheTarget ModuleB_viewControllerWithParams:(NSDictionary *)params;
+- (UIViewController *)performTarget:(NSString *)targetName action:(NSString *)actionName shouldCacheTarget:(BOOL)shouldCacheTarget B_viewControllerWithContentText:(NSString *)contentText;
 
 @end

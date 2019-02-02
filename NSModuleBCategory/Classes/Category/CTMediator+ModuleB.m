@@ -13,5 +13,14 @@
 - (UIViewController *)performTarget:(NSString *)targetName action:(NSString *)actionName shouldCacheTarget:(BOOL)shouldCacheTarget ModuleB_viewControllerWithParams:(NSDictionary *)params{
     return [self performTarget:targetName action:actionName params:params shouldCacheTarget:shouldCacheTarget];
 }
+- (UIViewController *)performTarget:(NSString *)targetName action:(NSString *)actionName shouldCacheTarget:(BOOL)shouldCacheTarget B_viewControllerWithContentText:(NSString *)contentText {
+    
+    /*
+     BViewController *viewController = [[BViewController alloc] initWithContentText:@"hello, world!"];
+     */
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    params[@"contentText"] = contentText;
+    return [self performTarget:targetName action:actionName params:params shouldCacheTarget:shouldCacheTarget];
+}
 @end
     
